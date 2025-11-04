@@ -11,15 +11,15 @@ app.secret_key = "supersecretkey"
 # -----------------------------
 # OpenRouteService API key
 # -----------------------------
-API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6IjcxYTE2MDYwYWMwNTQ2ZjhhNDM5ZDQ3ZjkzOWI1ZjkxIiwiaCI6Im11cm11cjY0In0="
+API_KEY = ""
 client = openrouteservice.Client(key=API_KEY)
 
 # -----------------------------
 # Spotify credentials
 # -----------------------------
-SPOTIPY_CLIENT_ID = "17cded72cb1c4ef18cc0f53a0574eca3"
-SPOTIPY_CLIENT_SECRET = "8e8c0cac7ea5443cad4df45961b0dbd1"
-SPOTIPY_REDIRECT_URI = "http://127.0.0.1:5000/spotify/callback"
+SPOTIPY_CLIENT_ID = ""
+SPOTIPY_CLIENT_SECRET = ""
+SPOTIPY_REDIRECT_URI = ""
 SCOPE = "user-read-playback-state,user-modify-playback-state,user-read-currently-playing,playlist-read-private"
 
 
@@ -172,3 +172,4 @@ def spotify_dashboard():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
