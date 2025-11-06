@@ -6,7 +6,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 app = Flask(__name__)
-app.secret_key = "supersecretkey"
+app.secret_key = "your secret key"
 
 # -----------------------------
 # OpenRouteService API key
@@ -172,4 +172,5 @@ def spotify_dashboard():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
